@@ -1,0 +1,138 @@
+@import "utils";
+
+.page {
+  color: $primary;
+  min-width: 320px;
+  scroll-behavior: smooth;
+  background-color: #fff;
+}
+
+.fa {
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: $primary;
+  transition: transform 0.3s, color 0.3s;
+
+  &:before {
+    font-size: 40px;
+  }
+}
+
+.fa-instagram {
+  display: block;
+  margin-left: 5px;
+  &:hover {
+    color: #e4405f;
+    transform: scale(1.1);
+  }
+}
+
+.fa-whatsapp {
+  margin-left: 5px;
+
+  &:hover {
+    color: green;
+    transform: scale(1.1);
+  }
+}
+
+.fa-envelope-o {
+  margin-left: 5px;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.main-container {
+  display: flex;
+
+  @include on320 {
+    flex-direction: column;
+  }
+
+  @include on1024 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.sidebar {
+  display: flex;
+  height: 10px;
+  margin: 0;
+
+  @include on1024 {
+    display: block;
+    height: 764px;
+    width: 50px;
+    margin-top: 150px;
+    margin-left: 150px;
+  }
+}
+
+.elem2 {
+  height: 300px;
+  margin: 0 auto;
+  transform: rotate(90deg);
+
+  @include on1024 {
+    height: 400px;
+    transform: none;
+    margin: 0;
+  }
+}
+
+.head_and_drop {
+  height: 0;
+  width: 0;
+
+  @include on1024 {
+    height: 764px;
+    width: 100%;
+  }
+}
+
+.drop {
+  height: 100px;
+  width: 100px;
+
+  margin: 0 auto 50px;
+  @include on1024 {
+    display: none;
+    height: 0;
+    width: 0;
+  }
+}
+
+.animated-title {
+  margin: 0 auto 50px;
+
+  @include on1024 {
+    display: none;
+    height: 0;
+    width: 0;
+  }
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+
+  @include on1024 {
+    display: none;
+  }
+}
+
+.links__onDesktop {
+  display: none;
+
+  @include on1024 {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+}
