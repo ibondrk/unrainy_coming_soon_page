@@ -7,44 +7,6 @@
   background-color: #fff;
 }
 
-.fa {
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  color: $primary;
-  transition: transform 0.3s, color 0.3s;
-
-  &:before {
-    font-size: 40px;
-  }
-}
-
-.fa-instagram {
-  display: block;
-  margin-left: 5px;
-  &:hover {
-    color: #e4405f;
-    transform: scale(1.1);
-  }
-}
-
-.fa-whatsapp {
-  margin-left: 5px;
-
-  &:hover {
-    color: green;
-    transform: scale(1.1);
-  }
-}
-
-.fa-envelope-o {
-  margin-left: 5px;
-  &:hover {
-    transform: scale(1.1);
-  }
-}
-
 .main-container {
   display: flex;
 
@@ -82,7 +44,7 @@
     height: 400px;
     transform: none;
     // margin: 0;
-    // padding-left: -5px;
+    padding-left: -5px;
   }
 }
 
