@@ -2192,8 +2192,14 @@ table {
   background-color: #fff;
 }
 
+.home {
+  height: 100vh;
+}
+
 .main-container {
   display: flex;
+  height: 100vh;
+  justify-content: space-between;
 }
 @media (min-width: 320px) {
   .main-container {
@@ -2273,6 +2279,7 @@ table {
   .animated-title {
     display: block;
     width: 756px;
+    margin: auto;
   }
 }
 
