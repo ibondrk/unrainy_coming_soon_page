@@ -2288,7 +2288,7 @@ table {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  gap: 30px;
+  gap: 5px;
 }
 @media (min-width: 1024px) {
   .links {
