@@ -2221,6 +2221,7 @@ table {
 @media (min-width: 1024px) {
   .sidebar {
     display: block;
+    align-self: center;;
     width: 50px;
     height: auto;
     margin-top: 100px;
@@ -2300,7 +2301,9 @@ table {
 }
 @media (min-width: 1024px) {
   .links__onDesktop {
-    display: block;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
 }
 
