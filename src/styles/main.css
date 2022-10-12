@@ -2221,7 +2221,7 @@ table {
 @media (min-width: 1024px) {
   .sidebar {
     display: block;
-    align-self: center;;
+    align-self: center;
     width: 50px;
     height: auto;
     margin-top: 100px;
