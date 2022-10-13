@@ -1,5 +1,9 @@
+const path = require('path')
+const webpack = require('webpack')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+
 module.exports = {
-  entry: './src/scripts/main.js',
+  entry: './src/main.js',
   module: {
     rules: [
       { test: /\.svg$/, use: 'svg-inline-loader' },
@@ -13,11 +17,6 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin(),
-    new webpack.EnvironmentPlugin({
-      'NODE_ENV': 'production'
-    }),
   ],
-  mode: process.env.NODE_ENV === 'production'
-    ? 'production'
-    : 'development'
+  mode: 'production',
 }
