@@ -30,7 +30,6 @@
 
 @mixin page-padings {
   padding: 18px 20px;
-  margin: 0 auto;
 
   @include on640 {
     padding: 18px 41px;

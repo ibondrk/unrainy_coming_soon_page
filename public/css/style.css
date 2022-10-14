@@ -2191,7 +2191,6 @@ table {
   scroll-behavior: smooth;
   background-color: #fff;
   padding: 18px 20px;
-  margin: 0 auto;
 }
 @media (min-width: 640px) {
   .page {
