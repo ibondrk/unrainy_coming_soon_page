@@ -5,6 +5,8 @@
   min-width: 320px;
   scroll-behavior: smooth;
   background-color: #fff;
+
+  @include page-padings;
 }
 
 .home {

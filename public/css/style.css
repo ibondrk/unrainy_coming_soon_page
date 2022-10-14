@@ -2190,6 +2190,18 @@ table {
   min-width: 320px;
   scroll-behavior: smooth;
   background-color: #fff;
+  padding: 18px 20px;
+  margin: 0 auto;
+}
+@media (min-width: 640px) {
+  .page {
+    padding: 18px 41px;
+  }
+}
+@media (min-width: 1024px) {
+  .page {
+    padding: 0;
+  }
 }
 
 .home {
